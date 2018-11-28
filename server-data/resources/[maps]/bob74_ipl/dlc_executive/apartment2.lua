@@ -64,7 +64,7 @@ ExecApartment2 = {
         end
     }, 
     LoadDefault = function()
-        ExecApartment2.Style.Set(ExecApartment2.Style.Theme.seductive, true)
+        ExecApartment2.Style.Set(ExecApartment2.Style.Theme.monochrome, true)
         ExecApartment2.Strip.Enable({ExecApartment2.Strip.A, ExecApartment2.Strip.B, ExecApartment2.Strip.C}, false)
         ExecApartment2.Booze.Enable({ExecApartment2.Booze.A, ExecApartment2.Booze.B, ExecApartment2.Booze.C}, false)
         ExecApartment2.Smoke.Set(ExecApartment2.Smoke.none)

@@ -98,7 +98,8 @@ FinanceOffice2 = {
     },
 
     LoadDefault = function()
-        FinanceOffice2.Style.Set(FinanceOffice2.Style.Theme.warm)
+        FinanceOffice2.Style.Set(FinanceOffice2.Style.Theme.ice)
         FinanceOffice2.Chairs.Set(FinanceOffice2.Chairs.on, true)
+        FinanceOffice2.Painting.Enable(FinanceOffice1.Painting)
     end
 }
