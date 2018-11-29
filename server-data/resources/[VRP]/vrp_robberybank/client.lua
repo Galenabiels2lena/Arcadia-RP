@@ -149,7 +149,7 @@ Citizen.CreateThread(function()
 
 		local blip = AddBlipForCoord(ve.x, ve.y, ve.z)
 		SetBlipSprite(blip, 278)
-		SetBlipScale(blip, 0.8)
+		SetBlipScale(blip, 0.7)
 		SetBlipAsShortRange(blip, true)
 		BeginTextCommandSetBlipName("STRING")
 		AddTextComponentString("Robbable Bank")

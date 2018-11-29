@@ -398,6 +398,8 @@ Citizen.CreateThread(function()
     for _, item in pairs(blips) do
       item.blip = AddBlipForCoord(item.x, item.y, item.z)
       SetBlipSprite(item.blip, item.id)
+      SetBlipColour(item.blip,59)
+      SetBlipScale(item.blip, 0.7)
       SetBlipAsShortRange(item.blip, true)
       BeginTextCommandSetBlipName("STRING")
       AddTextComponentString(item.name)

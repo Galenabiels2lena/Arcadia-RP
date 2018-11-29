@@ -8,6 +8,7 @@
 function tvRP.addBlip(x,y,z,idtype,idcolor,text)
   local blip = AddBlipForCoord(x+0.001,y+0.001,z+0.001) -- solve strange gta5 madness with integer -> double
   SetBlipSprite(blip, idtype)
+  SetBlipScale(blip,0.7)
   SetBlipAsShortRange(blip, true)
   SetBlipColour(blip,idcolor)
 

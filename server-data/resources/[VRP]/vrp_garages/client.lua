@@ -442,6 +442,7 @@ Citizen.CreateThread(function()
     for _, item in pairs(garages) do
     item.blip = AddBlipForCoord(item.x, item.y, item.z)
     SetBlipSprite(item.blip, item.id)
+    SetBlipScale(item.blip,0.7)
     SetBlipAsShortRange(item.blip, true)
     SetBlipColour(item.blip, item.colour)
     BeginTextCommandSetBlipName("STRING")

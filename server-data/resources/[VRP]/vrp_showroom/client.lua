@@ -334,6 +334,7 @@ function vehSR_ShowVehshopBlips(bool)
 			local blip = AddBlipForCoord(pos[1],pos[2],pos[3])
 			-- 60 58 137
 			SetBlipSprite(blip,326)
+			SetBlipScale(blip,0.7)
 			BeginTextCommandSetBlipName("STRING")
 			AddTextComponentString("Simeon Showroom")
 			EndTextCommandSetBlipName(blip)

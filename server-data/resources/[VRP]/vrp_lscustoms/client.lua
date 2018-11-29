@@ -2286,6 +2286,7 @@ function AddBlips()
 	for i,pos in ipairs(lsc.locations) do
 		local blip = AddBlipForCoord(pos.inside.x,pos.inside.y,pos.inside.z)
 		SetBlipSprite(blip, 72)
+		SetBlipScale(blip,0.7)
 		SetBlipAsShortRange(blip,true)
 	end
 end
