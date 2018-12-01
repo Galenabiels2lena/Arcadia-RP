@@ -43,7 +43,7 @@ local function build_market_menus()
                    TriggerClientEvent("pNotify:SendNotification",player,{text = "<span color='red'>Você não tem dinheiro suficiente</span>", type = "error", timeout = (3000),layout = "centerLeft"})
                 end
               else
-                TriggerClientEvent("pNotify:SendNotification",player,{text = "<span color='red'>Inventário Cheio</span>", type = "info", timeout = (3000),layout = "centerLeft"})
+                TriggerClientEvent("pNotify:SendNotification",player,{text = "<span color='red'>Mochila Cheia</span>", type = "info", timeout = (3000),layout = "centerLeft"})
               end
             else
               TriggerClientEvent("pNotify:SendNotification",player,{text = "<span color='red'>Valor inválido</span>", type = "error", timeout = (3000),layout = "centerLeft"})

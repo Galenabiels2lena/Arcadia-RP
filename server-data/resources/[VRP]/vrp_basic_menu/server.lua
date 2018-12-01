@@ -139,7 +139,7 @@ local choice_store_money = {function(player, choice)
       vRP.giveInventoryItem({user_id, "money", amount, true})
     end
   end
-end, "Enviar seu dinheiro da carteira para o inventário."}
+end, "Enviar seu dinheiro da carteira para a mochila."}
 
 --medkit storage
 local emergency_medkit = {}
@@ -390,7 +390,7 @@ local choice_store_armor = {function(player, choice)
       end
     end)
   end
-end, "Guardar Colete no inventário."}
+end, "Guardar Colete na mochila."}
 
 local unjailed = {}
 function jail_clock(target_id,timer)
@@ -1082,7 +1082,7 @@ vRP.registerMenuBuilder({"police", function(add, data)
     end
 	
 	if vRP.hasPermission({user_id,"police.easy_fine"}) then
-      choices["Multar F�cil"] = ch_fine -- Fines closeby player
+      choices["Multar F�cil"] = ch_fine -- Fines closeby player
     end
 	
 	if vRP.hasPermission({user_id,"police.easy_cuff"}) then

@@ -28,12 +28,12 @@ local lang = {
     give = {
       title = "💲Enviar dinheiro",
       description = "Enviar dinheiro ao jogador mais proximo de voce.",
-      prompt = "Quantidade para enviar:"
+      prompt = "Quantidade para enviar (max {1}):"
     }
   },
   inventory = {
-    title = "🎒Inventário",
-    description = "Abrir o inventário.",
+    title = "🎒 Mochila",
+    description = "Abrir a mochila.",
     iteminfo = "({1})<br /><br />{2}<br /><em>{3} kg</em>",
     info_weight = "Peso no Inventario {1}/{2} kg",
     give = {
@@ -50,7 +50,7 @@ local lang = {
       done = "Destruido ~r~{1} ~s~{2}."
     },
     missing = "~r~Falta {2} {1}.",
-    full = "~r~Inventário Cheio.",
+    full = "~r~Mochila Cheia.",
     chest = {
       title = "Bau",
       already_opened = "~r~Este Bau já foi Aberto por outra pessoa.",
@@ -75,13 +75,13 @@ local lang = {
     deposit = {
       title = "Depositar",
       description = "depositar no banco",
-      prompt = "Insira a quantidade que você quer depositar:",
+      prompt = "Insira a quantidade que você quer depositar (max {1}):",
       deposited = "~r~{1}$~s~ depositado."
     },
     withdraw = {
       title = "Retirar",
       description = "retirar para sua carteira",
-      prompt = "Insira a quantidade que você quer retirar:",
+      prompt = "Insira a quantidade que você quer retirar (max {1}):",
       withdrawn = "~g~{1}$ ~s~retirado.",
       not_enough = "~r~Você não tem dinheiro suficiente no banco."
     }
@@ -237,8 +237,8 @@ local lang = {
         record = "[Multas] {2} $ para {1}"
       },
       store_weapons = {
-        title = "🔫Enviar armas para o inventario",
-        description = "Todas as armas disponiveis no seu inventário."
+        title = "🔫Enviar armas para a mochila",
+        description = "Todas as armas disponiveis na sua mochila."
       }
     },
     identity = {

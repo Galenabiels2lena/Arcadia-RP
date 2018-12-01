@@ -68,7 +68,7 @@ function ch_give(idname, player, choice)
                 TriggerClientEvent("pNotify:SendNotification",player,{text = "<span color='red'>Valor inválido</span>", type = "error", timeout = (3000),layout = "centerLeft"})
               end
             else
-              TriggerClientEvent("pNotify:SendNotification",player,{text = "<span color='red'>Inventário Cheio</span>", type = "error", timeout = (3000),layout = "centerLeft"})
+              TriggerClientEvent("pNotify:SendNotification",player,{text = "<span color='red'>Mochila Cheia</span>", type = "error", timeout = (3000),layout = "centerLeft"})
             end
           end)
         else
@@ -435,7 +435,7 @@ function vRP.openChest(source, name, max_weight, cb_close, cb_in, cb_out)
                   -- actualize by closing
                   vRP.closeMenu(player)
                 else
-                 TriggerClientEvent("pNotify:SendNotification",player,{text = "<span color='red'>Inventário Cheio</span>", type = "info", timeout = (3000),layout = "centerLeft"})
+                 TriggerClientEvent("pNotify:SendNotification",player,{text = "<span color='red'>Mochila Cheia</span>", type = "info", timeout = (3000),layout = "centerLeft"})
                 end
               else
                 TriggerClientEvent("pNotify:SendNotification",player,{text = "<span color='red'>Valor inválido</span>", type = "error", timeout = (3000),layout = "centerLeft"})
