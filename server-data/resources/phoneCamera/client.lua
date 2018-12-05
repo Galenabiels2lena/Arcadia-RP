@@ -52,12 +52,12 @@ DestroyMobilePhone()
 	while true do
 		Citizen.Wait(0)
 		
-		if IsControlJustPressed(0, 27) and phone == true then -- SELFIE MODE
+		if IsControlJustPressed(0, 182) and phone == true then -- SELFIE MODE
 			frontCam = not frontCam
 			CellFrontCamActivate(frontCam)
 		end
 		
-		if IsControlJustPressed(0, 27) then -- OPEN PHONE
+		if IsControlJustPressed(0, 182) then -- OPEN PHONE
 			CreateMobilePhone(phoneId)
 			CellCamActivate(true, true)
 			phone = true
